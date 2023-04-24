@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotruOGm3oh1D6p0rArEcdTS5DDvsvIPeegQ&usqp=CAU" alt="logo" width="140"  height="auto" />
+
   <br/>
 
   <h3><b>Microverse Capstone Project</b></h3>
