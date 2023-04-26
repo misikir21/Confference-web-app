@@ -145,7 +145,7 @@ Coming soon
 
 ### Deployment
 
-https:/https://github.com/misikira
+https://misikira.github.io/Confference-web-app/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
