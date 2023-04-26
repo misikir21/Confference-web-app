@@ -517,7 +517,7 @@ footer {
     color: red;
   }
 
-  .partners-list{
+  .partners-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
