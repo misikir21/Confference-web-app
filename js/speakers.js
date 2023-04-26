@@ -3,25 +3,25 @@ const speakersData = [
     speakerName: 'Emad Aghajani',
     speakerAffiliation: 'Software Engineer',
     speakerInfo: 'Emad Aghajani is a postdoctoral researcher at the SEART research group, at Software Institute, USI, Switzerland.',
-    speakerImage: './img/speaker1',
+    speakerImage: './img/speaker 1.jpg',
   },
   {
     speakerName: 'Juliana Alves Pereira',
     speakerAffiliation: 'St Gallen University',
     speakerInfo: 'Juliana is a Lecturer (Assistant Professor) in Software Engineering at the School of Computing Science, University of Glasgow, United Kingdom.',
-    speakerImage: './img/speaker2.jpg',
+    speakerImage:  './img/speaker 2.jpg'
   },
   {
     speakerName: 'Saba Alimadadi',
     speakerAffiliation: 'Simon Fraser University',
     speakerInfo: 'Saba Alimadadi is an Assistant Professor in the Department of Computer Science and Engineering at Simon Fraser University.',
-    speakerImage: './img/speaker3.jpg',
+    speakerImage:  './img/speaker 3.jpg',
   },
   {
     speakerName: 'Sven Apel',
     speakerAffiliation: 'Saarland University',
     speakerInfo: 'Sven Apel is an associate professor in the School of Electrical Engineering and Computer Science at Washington State University, Pullman.',
-    speakerImage: './img/speaker4.jpg',
+    speakerImage:  './img/speaker 4.jpg',
   },
 ];
 
