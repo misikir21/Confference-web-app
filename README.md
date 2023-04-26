@@ -153,7 +153,7 @@ https://misikira.github.io/Confference-web-app/
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Hafiz Massam Tabraiz Khan
+👤 Misikir Abate Teka
 
 - GitHub: [@githubhandle](https://github.com/misikira)
 - Twitter: [@twitterhandle](https://twitter.com/Misikirabate)
