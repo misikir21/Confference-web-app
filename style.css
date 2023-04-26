@@ -78,7 +78,7 @@ body {
   padding-block: 4%;
 }
 
-.intro-preheading {
+.preheading {
   color: orangered;
   font-size: 30px;
 }
@@ -302,7 +302,7 @@ footer {
   width: 45%;
 }
 
-.past-events {
+.archived-events {
   list-style: none;
   display: flex;
   gap: 25px;
@@ -312,7 +312,7 @@ footer {
   padding-block: 2%;
 }
 
-.past-event {
+.archived-event {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -411,7 +411,7 @@ footer {
     font-weight: 600;
   }
 
-  .intro-preheading {
+  .preheading {
     padding-top: 12%;
     font-size: 20px;
   }
@@ -428,7 +428,7 @@ footer {
     margin-block: 4%;
   }
 
-  .contest-date {
+  .date {
     font-size: 25px;
     padding-top: 4%;
   }
@@ -517,7 +517,7 @@ footer {
     color: red;
   }
 
-  .partner-list {
+  .partners-list{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;

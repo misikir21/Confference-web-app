@@ -35,21 +35,21 @@ function renderFeaturedSpeakers() {
           <ul class="speakers">`;
 
   for (let i = 0; i < speakersData.length; i += 1) {
-    const featuredSpeakerInf = speakersData[i];
+    const featuredSpeakerInfo = speakersData[i];
 
     cardContent += `
                 
               <li class="speaker speaker-${i + 1}">
-                  <div class="bgFrame"><img class="Contributor" src="${featuredSpeakerInf.speakerImage}" alt="Speaker Picture"></div>
+                  <div class="bgFrame"><img class="Contributor" src="${featuredSpeakerInfo.speakerImage}" alt="Speaker Picture"></div>
                   <ul class="Contributor-detail">
                       <li class="Contributor-name">
-                          <h3>${featuredSpeakerInf.speakerName}</h3>
+                          <h3>${featuredSpeakerInfo.speakerName}</h3>
                       </li>
                       <li class="Contributor-affiliation">
-                          <h4>${featuredSpeakerInf.speakerAffiliation}</h4>
+                          <h4>${featuredSpeakerInfo.speakerAffiliation}</h4>
                       </li>
                       <li class="contributor-description">
-                          <p>${featuredSpeakerInf.speakerInfo}
+                          <p>${featuredSpeakerInfo.speakerInfo}
                           </p>
                       </li>
                   </ul>
@@ -57,32 +57,32 @@ function renderFeaturedSpeakers() {
   }
 
   cardContent += `</ul>
-          <button class="seeMoreBtn">More <i class="fa-solid fa-angle-down down-arrow"></i></button>
+          <button class="seeMore">More <i class="fa-solid fa-angle-down down-arrow"></i></button>
           <button class="speaker-3 less">Less <i class="fa-solid fa-angle-up down-arrow"></i></button>`;
   projectOverlay.innerHTML = cardContent;
   featureSection.appendChild(projectOverlay);
 
-  const seeMoreBtn = document.querySelector('.seeMoreBtn');
-  const seeLessBtn = document.querySelector('.less');
+  const seeMore = document.querySelector('.seeMore');
+  const seeLess = document.querySelector('.less');
   const speaker3 = document.querySelector('.speaker-3');
   const speaker4 = document.querySelector('.speaker-4');
 
   function seeMore() {
-    seeMoreBtn.setAttribute('class', 'speaker-3');
+    seeMore.setAttribute('class', 'speaker-3');
     speaker3.classList.remove('speaker-3');
     speaker4.classList.remove('speaker-4');
-    seeLessBtn.setAttribute('class', 'seeMoreBtn');
+    seeLess.setAttribute('class', 'seeMore');
   }
 
   function seeLess() {
-    seeLessBtn.setAttribute('class', 'speaker-3 less');
+    seeLess.setAttribute('class', 'speaker-3 less');
     speaker3.classList.add('speaker-3');
     speaker4.classList.add('speaker-4');
-    seeMoreBtn.setAttribute('class', 'seeMoreBtn');
+    seeMore.setAttribute('class', 'seeMore');
   }
 
-  seeMoreBtn.addEventListener('click', seeMore);
-  seeLessBtn.addEventListener('click', seeLess);
+  seeMore.addEventListener('click', seeMore);
+  seeLess.addEventListener('click', seeLess);
 }
 
 window.addEventListener('load', renderFeaturedSpeakers);
