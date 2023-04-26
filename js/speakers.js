@@ -21,7 +21,7 @@ const speakersData = [
     speakerName: 'Sven Apel',
     speakerAffiliation: 'Saarland University',
     speakerInfo: 'Sven Apel is an associate professor in the School of Electrical Engineering and Computer Science at Washington State University, Pullman.',
-    speakerImage:  './img/speaker 4.jpg',
+    speakerImage:  './img/speaker 4.jpg'
   },
 ];
 
