@@ -145,7 +145,6 @@ Coming soon
 
 ### Deployment
 
-https:/https://github.com/misikira
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +152,6 @@ https:/https://github.com/misikira
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Hafiz Massam Tabraiz Khan
 
 - GitHub: [@githubhandle](https://github.com/misikira)
 - Twitter: [@twitterhandle](https://twitter.com/Misikirabate)
