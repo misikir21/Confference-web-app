@@ -3,25 +3,25 @@ const speakersData = [
     speakerName: 'Emad Aghajani',
     speakerAffiliation: 'Software Engineer',
     speakerInfo: 'Emad Aghajani is a postdoctoral researcher at the SEART research group, at Software Institute, USI, Switzerland.',
-    speakerImage: '../img/speaker 1.jpg',
+    speakerImage: './img/speaker1',
   },
   {
     speakerName: 'Juliana Alves Pereira',
     speakerAffiliation: 'St Gallen University',
     speakerInfo: 'Juliana is a Lecturer (Assistant Professor) in Software Engineering at the School of Computing Science, University of Glasgow, United Kingdom.',
-    speakerImage: '../img/speaker 2.jpg',
+    speakerImage: './img/speaker2.jpg',
   },
   {
     speakerName: 'Saba Alimadadi',
     speakerAffiliation: 'Simon Fraser University',
     speakerInfo: 'Saba Alimadadi is an Assistant Professor in the Department of Computer Science and Engineering at Simon Fraser University.',
-    speakerImage: '../img/speaker 3.jpg',
+    speakerImage: './img/speaker3.jpg',
   },
   {
     speakerName: 'Sven Apel',
     speakerAffiliation: 'Saarland University',
     speakerInfo: 'Sven Apel is an associate professor in the School of Electrical Engineering and Computer Science at Washington State University, Pullman.',
-    speakerImage: '../img/speaker 4.jpg',
+    speakerImage: './img/speaker4.jpg',
   },
 ];
 
@@ -35,21 +35,21 @@ function renderFeaturedSpeakers() {
           <ul class="speakers">`;
 
   for (let i = 0; i < speakersData.length; i += 1) {
-    const featuredSpeakerInfo = speakersData[i];
+    const featuredSpeakerInf = speakersData[i];
 
     cardContent += `
                 
               <li class="speaker speaker-${i + 1}">
-                  <div class="bgFrame"><img class="Contributor" src="${featuredSpeakerInfo.speakerImage}" alt="Speaker Picture"></div>
+                  <div class="bgFrame"><img class="Contributor" src="${featuredSpeakerInf.speakerImage}" alt="Speaker Picture"></div>
                   <ul class="Contributor-detail">
                       <li class="Contributor-name">
-                          <h3>${featuredSpeakerInfo.speakerName}</h3>
+                          <h3>${featuredSpeakerInf.speakerName}</h3>
                       </li>
                       <li class="Contributor-affiliation">
-                          <h4>${featuredSpeakerInfo.speakerAffiliation}</h4>
+                          <h4>${featuredSpeakerInf.speakerAffiliation}</h4>
                       </li>
                       <li class="contributor-description">
-                          <p>${featuredSpeakerInfo.speakerInfo}
+                          <p>${featuredSpeakerInf.speakerInfo}
                           </p>
                       </li>
                   </ul>
@@ -57,32 +57,32 @@ function renderFeaturedSpeakers() {
   }
 
   cardContent += `</ul>
-          <button class="seeMore">More <i class="fa-solid fa-angle-down down-arrow"></i></button>
+          <button class="seeMoreBtn">More <i class="fa-solid fa-angle-down down-arrow"></i></button>
           <button class="speaker-3 less">Less <i class="fa-solid fa-angle-up down-arrow"></i></button>`;
   projectOverlay.innerHTML = cardContent;
   featureSection.appendChild(projectOverlay);
 
-  const seeMore = document.querySelector('.seeMore');
-  const seeLess = document.querySelector('.less');
+  const seeMoreBtn = document.querySelector('.seeMoreBtn');
+  const seeLessBtn = document.querySelector('.less');
   const speaker3 = document.querySelector('.speaker-3');
   const speaker4 = document.querySelector('.speaker-4');
 
   function seeMore() {
-    seeMore.setAttribute('class', 'speaker-3');
+    seeMoreBtn.setAttribute('class', 'speaker-3');
     speaker3.classList.remove('speaker-3');
     speaker4.classList.remove('speaker-4');
-    seeLess.setAttribute('class', 'seeMore');
+    seeLessBtn.setAttribute('class', 'seeMoreBtn');
   }
 
   function seeLess() {
-    seeLess.setAttribute('class', 'speaker-3 less');
+    seeLessBtn.setAttribute('class', 'speaker-3 less');
     speaker3.classList.add('speaker-3');
     speaker4.classList.add('speaker-4');
-    seeMore.setAttribute('class', 'seeMore');
+    seeMoreBtn.setAttribute('class', 'seeMoreBtn');
   }
 
-  seeMore.addEventListener('click', seeMore);
-  seeLess.addEventListener('click', seeLess);
+  seeMoreBtn.addEventListener('click', seeMore);
+  seeLessBtn.addEventListener('click', seeLess);
 }
 
 window.addEventListener('load', renderFeaturedSpeakers);
