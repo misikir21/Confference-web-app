@@ -140,6 +140,26 @@ body {
   padding: 1%;
 }
 
+.past-events {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.past-desc {
+  padding-block: 2%;
+}
+
+.past-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 23vw;
+  height: 25vh;
+  color: #fff;
+  gap: 10px;
+}
+
 .programs {
   list-style: none;
   display: flex;
@@ -293,6 +313,14 @@ footer {
   text-align: center;
 }
 
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 8%;
+  list-style: none;
+}
+
 .logo-desc {
   padding-inline: 20%;
   padding-block: 5%;
@@ -300,16 +328,6 @@ footer {
 
 .logo-img {
   width: 45%;
-}
-
-.archived-events {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.past-desc {
-  padding-block: 2%;
 }
 
 .archived-events {
@@ -581,19 +599,5 @@ footer {
   .aboutpage-footer {
     background-color: #fff;
     color: #000;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .program .program-icon {
-    font-size: 16px;
-  }
-
-  .program-heading {
-    font-size: 14px;
-  }
-
-  .program-dsec {
-    font-size: 10px;
   }
 }
