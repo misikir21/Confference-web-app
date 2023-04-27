@@ -97,7 +97,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can find a live demo in [HERE](https://github.com/misikira).
+You can find a live demo in [HERE](https://misikira.github.io/Confference-web-app/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
