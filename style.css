@@ -312,7 +312,7 @@ footer {
   padding-block: 2%;
 }
 
-.archived-event {
+.archived-events {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,12 +323,12 @@ footer {
 }
 
 .event-1 {
-  background: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(./images/win1.jpg);
+  background: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(./img/win1.jpg);
   background-repeat: no-repeat;
 }
 
 .event-2 {
-  background: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(./images/win2.jpg);
+  background: linear-gradient(rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(./img/win2.jpg);
   background-repeat: no-repeat;
 }
 
